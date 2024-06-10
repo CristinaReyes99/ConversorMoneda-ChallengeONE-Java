@@ -1,0 +1,92 @@
+[
+  {
+    "base_code": "USD",
+    "target_code": "MXN",
+    "conversion_result": 36.6262
+  },
+  {
+    "base_code": "MXN",
+    "target_code": "USD",
+    "conversion_result": 24.90216
+  },
+  {
+    "base_code": "COP",
+    "target_code": "USD",
+    "conversion_result": 1.668823
+  },
+  {
+    "base_code": "MXN",
+    "target_code": "USD",
+    "conversion_result": 357576.2383132
+  },
+  {
+    "base_code": "USD",
+    "target_code": "COP",
+    "conversion_result": 2.2207365647E7
+  },
+  {
+    "base_code": "MXN",
+    "target_code": "USD",
+    "conversion_result": 25419.15287
+  },
+  {
+    "base_code": "MXN",
+    "target_code": "USD",
+    "conversion_result": 3574.579465
+  },
+  {
+    "base_code": "USD",
+    "target_code": "ARS",
+    "conversion_result": 8341378.5
+  },
+  {
+    "base_code": "BRL",
+    "target_code": "USD",
+    "conversion_result": 12.1792
+  },
+  {
+    "base_code": "ARS",
+    "target_code": "USD",
+    "conversion_result": 7.604168
+  },
+  {
+    "base_code": "USD",
+    "target_code": "ARS",
+    "conversion_result": 39778.5
+  },
+  {
+    "base_code": "ARS",
+    "target_code": "USD",
+    "conversion_result": 0.053176
+  },
+  {
+    "base_code": "USD",
+    "target_code": "BRL",
+    "conversion_result": 241.7852
+  },
+  {
+    "base_code": "BRL",
+    "target_code": "USD",
+    "conversion_result": 8.7538
+  },
+  {
+    "base_code": "USD",
+    "target_code": "COP",
+    "conversion_result": 180963.4756
+  },
+  {
+    "base_code": "COP",
+    "target_code": "USD",
+    "conversion_result": 0.0360964
+  },
+  {
+    "base_code": "USD",
+    "target_code": "MXN",
+    "conversion_result": 842.4026
+  },
+  {
+    "base_code": "MXN",
+    "target_code": "USD",
+    "conversion_result": 2.51206
+  }
+]
