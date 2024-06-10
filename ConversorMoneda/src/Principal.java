@@ -1,3 +1,5 @@
+import javax.swing.*;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Principal {
@@ -23,12 +25,23 @@ public class Principal {
                     Elija una opción válida:
                     ***************************************************************
                     """);
-            int opcionConversor = Integer.parseInt(lectura.nextLine().trim());
+            try {
+                String input = lectura.nextLine().trim();
 
-            if (opcionConversor == 9) {
-                System.out.println("Gracias por usar el conversor de monedas. ¡Hasta luego!");
-                break;
-            }
+                if (input.isEmpty()) {
+                    throw new IllegalArgumentException("Campo vacío, favor de ingresar una opción");
+                }
+
+                int opcionConversor = Integer.parseInt(input);
+
+                if (opcionConversor == 9) {
+                    System.out.println("Gracias por usar el conversor de monedas. ¡Hasta luego!");
+                    break;
+                }
+                if (opcionConversor < 1 || opcionConversor > 9 ){
+                    System.out.println("Opcion no valida. Por favor Elija una opción");
+                    continue;
+                }
 
             System.out.print("Ingrese la cantidad a convertir: ");
             double cantidad = lectura.nextDouble();
@@ -60,9 +73,6 @@ public class Principal {
                 case 8:
                     conversorMoneda = "MXN/USD";
                     break;
-                default:
-                    System.out.println("Opción no válida. Por favor, elija una opción entre 1 y 9.");
-                    continue;
             }
 
             try {
@@ -70,8 +80,17 @@ public class Principal {
                 System.out.println("El valor: " + cantidad + " ["+ moneda.base_code() + "] "
                                     +"corresponde al valor final de =>> " + moneda.conversion_result()
                                     + " [" + moneda.target_code() + "] ");
-            } catch (RuntimeException e) {
+                } catch (RuntimeException e) {
                 System.out.println(e.getMessage());
+                }
+
+            } catch (NumberFormatException e) {
+                System.out.println("Ingrese una opción válida");
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            } catch (InputMismatchException e) {
+                System.out.println("Ingrese una cantidad válida");
+                //lectura.nextLine();
             }
         }
 
