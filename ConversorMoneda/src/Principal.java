@@ -102,10 +102,9 @@ public class Principal {
                 System.out.println(e.getMessage());
             } catch (InputMismatchException e) {
                 System.out.println("Ingrese una cantidad válida");
-                //lectura.nextLine();
+                lectura.nextLine();
             }
         }
-
         lectura.close();
     }
 }
